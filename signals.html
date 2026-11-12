@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111217">
+  <title>Tín hiệu · Hermes Clip</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="signals.css">
+  <script src="signals-data.js" defer></script>
+  <script src="signals.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="Hermes Clip">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Hermes<span class="brand-clip"> Clip</span></span>
+    </div>
+    <nav class="view-nav" aria-label="Màn hình">
+      <a href="index.html">Studio</a>
+      <a href="signals.html" aria-current="page">Tín hiệu</a>
+    </nav>
+    <span class="environment"><span aria-hidden="true"></span>Mô phỏng</span>
+  </header>
+  <main class="signals">
+    <header class="page-heading signal-heading">
+      <div>
+        <h1>Tín hiệu sản xuất</h1>
+        <p>Theo dõi từng lượt từ hàng chờ đến Thư viện.</p>
+      </div>
+      <div id="replay-controls" class="replay-controls"></div>
+    </header>
+
+    <div class="signal-layout">
+      <section class="signal-board" aria-labelledby="board-title">
+        <header class="board-heading">
+          <h2 id="board-title">Dòng tác vụ</h2>
+          <span id="replay-step"></span>
+        </header>
+        <div class="signal-map">
+          <section class="origin-lane" aria-labelledby="origin-title">
+            <h3 id="origin-title">Giao việc</h3>
+            <div id="origins" class="origins"></div>
+          </section>
+          <section class="core-lane" aria-labelledby="core-title">
+            <h3 id="core-title">Điều phối</h3>
+            <div id="core" class="signal-core"></div>
+          </section>
+          <section class="pipeline-lane" aria-labelledby="pipeline-title">
+            <h3 id="pipeline-title">Xử lý media</h3>
+            <div id="main-flow" class="main-flow" role="group" aria-label="Các bước xử lý"></div>
+            <div id="side-flow" class="side-flow" role="group" aria-label="Các trạng thái cần theo dõi"></div>
+          </section>
+        </div>
+        <footer class="board-foot">
+          <span id="latest-event"></span>
+        </footer>
+      </section>
+
+      <section class="signal-list work-panel" aria-labelledby="signal-list-title">
+        <header class="work-header">
+          <div class="work-heading">
+            <h2 id="signal-list-title">Lượt chạy</h2>
+            <span id="visible-count" class="count"></span>
+          </div>
+          <p id="list-scope"></p>
+        </header>
+        <ul id="jobs" class="job-list"></ul>
+      </section>
+    </div>
+    <p id="replay-feedback" class="sr-only" role="status"></p>
+  </main>
+
+  <dialog id="job-dialog" aria-labelledby="job-title">
+    <div class="detail-content">
+      <header class="detail-heading">
+        <div>
+          <p id="job-id"></p>
+          <h2 id="job-title" tabindex="-1"></h2>
+        </div>
+        <form method="dialog" novalidate>
+          <button type="submit" class="close-button" aria-label="Đóng">×</button>
+        </form>
+      </header>
+      <div id="job-detail"></div>
+    </div>
+  </dialog>
+</body>
+</html>

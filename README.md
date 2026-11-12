@@ -21,3 +21,11 @@ Mở [localhost:4173](http://localhost:4173). Trên Windows có thể dùng `py 
 Mọi thay đổi nằm trong bộ nhớ của tab. Tải lại trang để đặt lại dữ liệu mẫu. Ứng dụng đọc tệp được chọn ngay trong trình duyệt. Prototype chạy offline và chưa kết nối app desktop Hermes Clip hay tài khoản bên ngoài.
 
 Hình studio gốc được tạo cho repo này. Video mẫu là đoạn thử 3 giây trích từ hình studio. Phông chữ Be Vietnam Pro được phân phối theo [SIL Open Font License](assets/OFL-BeVietnamPro.txt). Bố cục tham khảo [Sahni Agents Office](https://github.com/ajsahni/agents-office).
+
+## Tín hiệu sản xuất
+
+Chọn **Tín hiệu** ở thanh đầu trang hoặc mở `signals.html`. Bấm một nguồn giao việc và một bước xử lý để lọc lượt. Bấm **Hermes Clip** ở giữa đồ thị để xóa bộ lọc. Mở một lượt để xem provider và lịch sử sự kiện.
+
+Dùng **Bước tiếp** để kiểm từng chuyển trạng thái, **Phát mô phỏng** để chạy kịch bản và **Đặt lại** để quay về ảnh chụp ban đầu. Tệp sẵn sàng và tệp đã nhập Thư viện là hai trạng thái khác nhau. Kịch bản chạy hoàn toàn trong trình duyệt với fixture, kể cả khi xuất hiện tên provider thật.
+
+Ảnh đã chụp từ Chromium: [1366 px](review/signals-1366.webp) · [1920 px](review/signals-1920.webp).

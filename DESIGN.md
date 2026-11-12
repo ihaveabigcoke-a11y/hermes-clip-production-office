@@ -27,3 +27,9 @@ Thẻ studio và cột việc dùng góc bo lớn hơn các nút, bộ lọc và
 ## Components
 
 Bộ chọn sản phẩm dùng select chuẩn. Bộ lọc và trạm là nút có trạng thái chọn. Các công việc dùng chung một hàng và một hộp chi tiết. Video chỉ tải metadata khi mở chi tiết. Trạng thái mẫu thay đổi trong phiên hiện tại.
+
+## Tín hiệu sản xuất
+
+Màn Tín hiệu dùng cùng graphite và xanh chanh với Studio. Đồ thị đi từ nguồn giao việc qua Hermes tới các bước xử lý. Kết nối và số đếm mô tả các lượt trong ảnh chụp mẫu, với hiệu ứng ngắn ở nút vừa đổi khi phát mô phỏng. Trạng thái lỗi, dừng và đối soát có nhãn riêng và luôn hiện kể cả khi bằng 0. Màn hình hẹp chuyển phần xử lý xuống dưới và giữ cùng thao tác lọc.
+
+Mỗi lượt có đúng một nhóm hiển thị. Trạng thái `ready` cần mã tài sản để tính là đã vào Thư viện. Bộ lọc nguồn và trạng thái áp dụng đồng thời. Bộ đếm bước đếm theo nguồn đang chọn. Danh sách chỉ đếm lượt đang hiển thị. Hộp chi tiết ghi nguồn giao việc, provider, trạng thái, mã tài sản và lịch sử. Các nút phát, tiến một bước và đặt lại chỉ thay đổi ảnh chụp mẫu trong phiên.
