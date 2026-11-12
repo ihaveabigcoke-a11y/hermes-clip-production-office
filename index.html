@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111217">
+  <title>Phòng sản xuất · Hermes Clip</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="studio.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="Hermes Clip">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Hermes<span class="brand-clip"> Clip</span></span>
+    </div>
+    <span class="environment"><span aria-hidden="true"></span>Dữ liệu mẫu</span>
+  </header>
+  <main>
+    <div class="page-heading">
+      <h1>Phòng sản xuất</h1>
+      <label class="product-control" for="product">
+        <span>Sản phẩm</span>
+        <select id="product"></select>
+      </label>
+    </div>
+    <div class="workspace">
+      <section class="studio" aria-labelledby="studio-title">
+        <header class="studio-header">
+          <h2 id="studio-title">Toàn cảnh studio</h2>
+          <span id="studio-controls"></span>
+        </header>
+        <div class="studio-map">
+          <img src="assets/studio.webp" width="1536" height="1024" alt="">
+          <div id="stations" class="stations" role="group" aria-label="Các trạm sản xuất"></div>
+        </div>
+        <footer class="studio-footer" aria-label="Tiến độ sản phẩm">
+          <span id="progress-summary"></span>
+          <div id="progress-steps" class="progress-steps" aria-hidden="true"></div>
+        </footer>
+      </section>
+      <section class="work-panel" aria-labelledby="work-title">
+        <header class="work-header">
+          <div class="work-heading">
+            <h2 id="work-title">Cần xử lý</h2>
+            <span id="pending-count" class="count"></span>
+          </div>
+          <p id="work-scope"></p>
+        </header>
+        <div id="filters" class="filters" role="group" aria-label="Lọc trạng thái"></div>
+        <div id="tasks" class="tasks"></div>
+      </section>
+    </div>
+    <p id="feedback" class="sr-only" role="status"></p>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="detail-content">
+      <header class="detail-heading">
+        <div>
+          <p id="detail-type"></p>
+          <h2 id="detail-title" tabindex="-1"></h2>
+        </div>
+        <form method="dialog" novalidate>
+          <button type="submit" class="close-button" aria-label="Đóng">×</button>
+        </form>
+      </header>
+      <div id="detail-body"></div>
+    </div>
+  </dialog>
+</body>
+</html>
